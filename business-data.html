@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Abc bank loan application page</title>
+    <link rel="stylesheet" href="loanform.css">
+</head>
+
+<body>
+    <header id="header_background">
+        <h1 class="align-center">ABC BANK PLC</h1>
+        <h3 class="align-center">Abc Online Banking</h3>
+        <h2 class="align-center">Online Loan <span>Application</span> Form</h2>
+    </header>
+    <section id="business_plan">
+        <h4 class="biz_data">BUSINESS & LOAN DETAILS</h4>
+        <form action="www.abcbankloanprocess.com">
+            <label for="business_type">What's the current stage of your business?</label>
+            <select id="business_type" required>
+                <option disabled selected>--Select--</option>
+                <option value="start-up">New Business(Start-up)</option>
+                <option value="existing">Existing Business</option>
+            </select><br><br>
+            <label for="business_brief">Write briefly about your business or business idea</label><br>
+            <textarea name="business_brief" id="business_brief" cols="20" rows="10"
+                placeholder="State the name of your business and what your business or business idea does in general"></textarea><br><br>
+            <label for="business_age">How long have you been in the Business?</label>
+            <select id="business_age" required>
+                <option disabled selected>---Select period---</option>
+                <option value="zero-year">Less Than 1year</option>
+                <option value="one-two-years">1-2years</option>
+                <option value="two-five-years">2-5years</option>
+                <option value="above-five-years">Above 5years</option>
+            </select><br><br>
+            <label for="income">How much did your business make per month?</label>
+            <select id="income" required>
+                <option selected required>---Select amount---</option>
+                <option value="below-30">Less than NGN30,000</option>
+                <option value="30-60">NGN30,000 - NGN60,000</option>
+                <option value="70-90">NGN70,000 - NGN90,000</option>
+                <option value="100-150">NGN100,000 - NGN150,000</option>
+                <option value="160-190">NGN160,000 - NGN190,000</option>
+                <option value="200-250">NGN200,000 - NGN250,000</option>
+                <option value="260-290">NGN260,000 - NGN290,000</option>
+                <option value="above-300">Above NGN300,000</option>
+            </select><br><br>
+            <section id="loan_information">
+                <label for="loan-amount">How much you intend to loan?</label>
+                <input id="loan-amount" type="number" placeholder="Amount in figure" max="1000000" required><br><br>
+                <label for="collateral">Loan Collateral<br><i>NOTE: Your collateral should worth twice your
+                        loan-amount</i></label>
+                <select id="collateral">
+                    <option selected aria-required="true">---Select---</option>
+                    <option value="land">Land</option>
+                    <option value="gold">Gold</option>
+                    <option value="bond">Bond</option>
+                    <option value="credentials">Credentials</option>
+                    <option value="others">Others</option>
+                </select>
+            </section>
+            <!-- <div id="prev&next_page">
+                <a href="edu-data.html"><button class="previous-page" type="submit">PREVIOUS</button>
+                </a>
+                <a href="declaration.html"><button class="next-page" type="submit">NEXT>>></button></a>
+            </div> -->
+
+        </form><br><br>
+    </section>
+    <div id="prev_next_page">
+        <a href="edu-data.html"><button class="previous-page">PREVIOUS</button>
+        </a>
+        <a href="declaration.html"><button class="next-page">NEXT>>></button></a>
+    </div>
+
+
+</body>
+
+</html>
